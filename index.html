@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Leonardo González G.</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="javascript:void(0)" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" 
+        target="_blank" onclick="printCV()">
+        <i data-feather="printer"></i>
+        <span class="w3-margin-left download-text">Imprimir CV</span>
+        </a>
+      </div>
+      <script>
+          function printCV() {
+          window.print();
+          }
+      </script>
+
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ACERCA DE</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUMEN</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACTO</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="leo_catpeg1.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.facebook.com/l3og2" target="_blank">
+              <i data-feather="facebook"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/l3o_g2/" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://twitter.com/LEONARD51451638" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/leonardo-gonzalez-44959047/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="\xampp\htdocs\app01\Curriculum_Leonardo_Gonzalez.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACTO</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUMEN</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ACERCA DE</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-3 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"La fuerza no proviene de la capacidad fisica sino de la voluntad indomable." Mahatma Gandhi</p>
+            <h1>Leonardo González G.</h1>
+            <h3>Contador</h3>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ACERCA DE</h2>
+            <p class="w3-margin-top-2"> 
+              Soy una persona responsable, comprometida y organizada, con habilidades proactivas y cooperativas.
+              Me considero autodidacta y siempre estoy buscando aprender cosas nuevas. Tengo habilidades de 
+              liderazgo y me gusta trabajar en equipo para lograr objetivos comunes. Además, soy competitivo y
+              siempre busco superar mis propias metas. Estas habilidades me permiten ser un candidato ideal para
+              cualquier empresa que busque un trabajador comprometido y capaz de liderar equipos de trabajo.
+            </p>
+            <p class=""> 
+              Mi liderazgo se caracteriza por ser motivador e inspirador, capaz de desarrollar talentos y habilidades
+              en los miembros del equipo. Soy una persona creativa y dinámica, con aptitudes y actitudes basadas en
+              la responsabilidad, el respeto y la cordialidad. Tengo capacidad de autogestión, capacidad para asumir 
+              retos y habilidades para dirigir, coordinar y ejecutar proyectos. Soy un líder nato, trazo metas y las 
+              cumplo de manera efectiva. Además, tengo la capacidad de improvisar y utilizar recursos ocultos en el 
+              momento necesario.
+            </p>
+            <p class=""> 
+              Mi actitud de servicio, manejo de recursos humanos, trabajo en equipo, 
+              compromiso, adaptación y actitud proactiva al cambio son habilidades que me permiten liderar equipos 
+              de trabajo de manera efectiva.
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUMEN</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">MI HISTORIAL DE EMPLEO</h3>
+              <div class="">
+                <h4>Analista Contable - PDVSA Gas Comunal, S.A.</h4>
+                <p>Abril 2018 - Presente</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Encargado de coordinar las actividades relacionadas a la preparación de los informes 
+                    financieros, según los estándares internacionales (NIIF).</li>
+                  <li>Velar por el correcto funcionamiento y parametrización de los sistemas administrativos y contables.</li>
+                  <li>Coordinar el análisis de todas las cuentas contables que estructuran los estados financieros, cumplir con los tiempos y calidad en la 
+                    entrega de la información financiera, utilizando el cronograma mensual de cierre exigido por la Casa Matriz PDVSA.</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Analista de Bienes Nacionales - Fabrica de Insumos 27 de Febrero, S.A.</h4>
+                <p>Octubre 2016 - Septiembre 2017 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Análisis y toma de inventarios.</li>
+                  <li>Control de entradas y salidas de Activos Fijo.</li>
+                  <li>Encargado de Gestionar la adecuación de inventarios ante la Superintendencia de Bienes Públicos (SUDEBIP).</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Coordinador de Contabilidad - Fundación Villa del Cine</h4>
+                <p>Febrero 2008 - Agosto 2016 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Coordinar la preparación, formulación y presentación del presupuesto del Ente ante el Ministerio del Poder Popular para la Comunicación e Información, según la Ley de Presupuesto Público.</li>
+                  <li>Coordinar el cierre contable mensual y anual.</li>
+                  <li>Coordinar los procesos contables, según los terminos que establece la Ley Orgánica de la Administración Financiera del Sector Público y los principios contables generalmente aceptados en Venezuela (VEN-NIIF).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MIS ESTUDIOS</h3>
+                <h4>TSU - Administración mención Contabilidad y Finanzas, IUT "Isaac Newton - Venezuela</h4>
+                <p>Agosto 2000 </p>
+                <h4>PNF Ingienería Informática, UNETI "Universidad Nacional Experimental de las Telecomunicaciones e Informática" - Venezuela</h4>
+                <p>Noviembre 2023 - Estudiando actualmente trayecto I</p>
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MIS HABILIDADES</h3>
+              <!--SOFT SKILLS-->
+              <h4>Competencias Interpersonales</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Tengo excelente capacidad comunicacional oral y escrita.</li>
+                <li>Tengo talento para investigar y estudiar procesos para ofrecer diferentes mejoras y soluciones en beneficio de la organización.</li>
+                <li>Capacidad de integración y trabajo en equipo.</li>
+              </ul>
+              <!--TECHNICAL SKILLS-->
+              <h4>Competencias Técnicas</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Experiencia en el manejo de MS Office y Libre Office.</li>
+                  <li>Experiencia en difentes programas contables-administrativos como SIGESP, SAINT, SAP, SGT Contable, entre otros.</li>
+                  <li>Experiencia en Windows, Linux, Python, HTML, SQL (POSTGRES), Comercio en Bolsas Criptograficas Centralizadas y Decentralizadas basadas en redes Ethereum (ETH), Bitcoin (BTC), Poligon (MATIC) y Tron (TRX).</li>
+                </ul>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MIS HOBBIES E INTERESES</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Me gusta el senderismo de montaña.</li>
+                  <li>Soy practicante de Tai-Chi.</li>
+                  <li>Me gusta la programación y dedico tiempo al desarrollo y a la adquisición de conocimientos relacionados.</li>
+                </ul>
+            </div>
+
+            <!--REFERENCE SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">REFERENCIAS</h3>
+              <h4>Laudys Uzcategui - Contador Público</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>(+58) 0416-2180859</li>
+                <li>luzcategui15@gmail.com</li>
+              </ul>
+              <h4>Juan Febres - Contador Público</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>(+58) 0412-9243743</li>
+                <li>jotaerre.febres@gmail.com</li>
+              </ul>
+            </div>            
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">DETALLES DE CONTACTO</h2>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Nombre: Leonardo González González</p>
+              <p>RIF: V12507695-1</p>
+              <p>Dirección: Urb. Los Naranjos, zona 3, manzana B, casa B-27, 1220 Guarenas, Edo. Miranda - Venezuela</p>
+              <p>Celular: (+58) 0426-6075211</p>
+              <p>E-mail: gonzalezg.leonardo@gmail.com</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023 - Leonardo González González</p>
+           <p class="w3-small">Este sitio web fue hecho en Visual Studio Code, contactame para mayor información.</p>
+          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://t.me/l3og2" target="_blank">Contactar ahora</a> 
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
